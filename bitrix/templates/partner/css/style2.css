@@ -1,0 +1,152 @@
+.breadcrumb{
+       background:none;
+       margin-bottom: 0;  
+       padding-bottom: 0px;
+       font-size: 15px;
+       padding-top: 7px;
+}
+.breadcrumb > li + li:before{
+           content: ">\00a0";
+           font-size: 15px;
+}
+.breadcrumb li a{
+    color: #01839d;
+}
+.newshr{
+    margin:10px 0;
+     border-top: 1px solid #e4e4e4;
+}
+.news-list{
+    font-family: Calibri Light, Arial, Candara, Segoe, 'Segoe UI', Optima,  sans-serif;
+}
+.news-list span{
+   color: #01839d;
+   font-size: 44px;
+  text-transform: uppercase;
+ display: block;
+}
+.archiv activ{
+    color: #01839d;
+    font-size: 18px;
+}
+.news-list .nav > li > a{
+  padding: 0 12px; 
+  font-size: 18px;
+  color: #4b4b4b;
+  font-weight: 500;
+}
+.news-list .nav > li > a:hover{
+    text-decoration: underline;
+    background: none;
+    color: #01839d;
+}
+.archiv li{
+  font-size: 18px;
+  color: #4b4b4b; 
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.news-list .archiv{
+    clear: both;
+    padding-bottom: 25px;
+}
+.news-list-block{
+    float:left;
+    margin-bottom: 15px;
+}
+.news-list-block span{
+    color: #717171;
+    font-size: 16px;
+    display: inline;
+}
+.news-list-block h5 a{
+    color:#01839d;
+    font-size: 22px;
+     font-family: Calibri Regular, Arial, Candara, Segoe, 'Segoe UI', Optima,  sans-serif;
+}
+.nav >li{
+    float:left;
+}
+.news-list-block p{
+    color:#3b3b3b;
+    font-size: 16px;
+}
+.news-list-block h4, .uslugi h4{
+    color: #01839d;
+    font-size: 39px;
+    font-family: Calibri Light;
+   
+}
+.news-list-block h4{
+     margin-top: 0;
+}
+.detail-news p{
+     font-size: 19px;
+     padding-bottom: 15px;
+}
+.news-list .archiv-news{
+    float:right;
+    font-size: 18px;
+    color: #01839d;
+}
+.uslugi span{
+   color:#3b3b3b;
+   font-size: 29px;
+     font-family: Calibri Light;
+     margin-top: 10px;
+     display: block;
+}
+.uslugi h3{
+    font-size: 22px;
+    color: #01839d;
+    margin-top: 10px;
+    padding-top: 15px
+}
+.ur-uslugi li a, .fiz-uslugi li a{
+    font-size: 16px;
+    color: #3b3b3b;
+     font-family: Calibri Regular;
+}
+.uslugi img{
+    float:left;
+    margin-top: 14px;
+    margin-right: 14px;
+}
+.footer{
+   padding: 20px 0;
+    margin-top:40px;
+        text-align: center;
+        background-color: #f4f4f4;
+       font-family: Calibri;
+}
+.footer a{
+    color: #6f6f6f;
+        font-weight: bold;
+        font-size: 14px; 
+}
+.footer ul{
+    margin:10px 0;
+}
+.footer-line{
+    border-top: 1px solid #c3c3c3;
+    width: 50%;
+      margin: 5px auto;
+}
+.uslugi-tel{
+    display: inline-block;
+    margin-bottom: 0 !important;
+}
+.uslugi-tel li{
+ float: left;
+  margin: 0 20px;
+  list-style-type: square;
+  color: #01839d;
+}
+.uslugi-tel span{
+    color: #6f6f6f;
+    font-size: 17px;
+    font-weight: bold;
+}
+.uslugi-tel > li:first-child {
+    list-style-type: none;
+}
