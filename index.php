@@ -159,7 +159,7 @@ $APPLICATION->SetTitle('Главная');
 	array(
 		"COMPONENT_TEMPLATE" => "dela_template",
 		"IBLOCK_TYPE" => "works",
-		"IBLOCK_ID" => "2",
+		"IBLOCK_ID" => "3",
 		"NEWS_COUNT" => "4",
 		"USE_SEARCH" => "N",
 		"USE_RSS" => "N",
