@@ -1,0 +1,278 @@
+@media (max-width: 767px) {
+    .nav-tabs > li > a {
+        font-size: 100%;
+    }
+    .logo img{
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    .news_item{
+        border-right: none;
+        border-bottom: 1px solid #dcdcdc;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+    .news_item:last-child{
+        border-bottom: 0;
+    }
+    .del-item img{
+        display: none;
+    }
+    .phone_number{
+        text-align: center;
+    }
+    .phone_label{
+        text-align: center;
+    }
+    .uslugi-tel li{
+        list-style: none;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        clear: both;
+    }
+    .uslugi-tel{
+        padding-left: 0;
+
+    }
+    .news_item {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .news_item:nth-child(1) {
+        padding-left: 15px;
+    }
+
+    .nav-tabs-news > li {
+        display: block;
+        margin-left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 15px;
+        clear: both;
+        width: 100%;
+    }
+
+    .del-item {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .banners span {
+        font-size: 200%;
+        display: block;
+        text-align: center;
+    }
+
+    .servicesItem {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .banner-span {
+        font-size: 100% !important;
+        display: block;
+        text-align: center;
+        padding-right: 10px;
+    }
+
+    .button button {
+        font-size: 100% !important;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .button {
+        padding-left: 15px !important;
+        margin-bottom: 20px;
+
+        padding-right: 15px !important;
+    }
+
+    .men img {
+        height: 100%;
+    }
+ .navbar-default .navbar-toggle .icon-bar{
+    background: #fff;
+}
+.nav >li{
+    clear: both;
+   width: 90%;
+}
+.navbar-nav > li > a{
+    padding:10px;
+   text-align: center;
+}
+ .uruslugi-list .rg{
+        margin-left: 0px;
+    }
+  .uruslugi-list span{
+        font-size: 35px;
+    }
+    .fon{
+            background: url("../img/fonmob.jpg") no-repeat;
+    background-size: 100% 100%;
+    }
+    .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover{
+        width: 100%;
+    }
+    .btn-archiv{
+     float:left !important;
+     margin-left: 15px;
+     width: 67%;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .banners span {
+        font-size: 3.5vw;
+    }
+  
+    .servicesItem {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .banner-span {
+        font-size: 1.3vw !important;
+    }
+
+    .button button {
+        font-size: 2vw !important;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .button {
+        padding-left: 15px !important;
+        margin-bottom: 20px;
+
+        padding-right: 15px !important;
+    }
+
+    .men img {
+        height: 100%;
+    }
+    .uruslugi-list .rg{
+           margin-left: 31px;
+
+    }
+     .news .nav-tabs{
+     width: 70%;
+    float: left;
+}
+.uruslugi-list span {
+    font-size: 35px;
+}
+.red_btn{
+    font-size: 10px;
+    padding:12px 5px;
+}
+}
+
+@media (min-width: 992px) {
+    .servicesItem {
+        max-width: calc(33% - 30px + 13px) !important;
+        min-width: calc(33% - 30px + 13px) !important;
+
+    }
+
+    .banners span {
+        font-size: 3.2vw;
+        letter-spacing: 7px;
+    }
+
+    .banner-span {
+        font-size: 1.3vw !important;
+    }
+
+    .button button {
+        font-size: 1vw !important;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .button {
+        padding-left: 15px !important;
+        margin-bottom: 20px;
+
+        padding-right: 15px !important;
+    }
+
+    .men img {
+        height: 100%;
+    }
+     .uruslugi-list .rg{
+        margin-left: 28px;
+    }
+   .red_btn{
+    font-size: 14px;
+       padding: 15px;
+}
+}
+
+@media (min-width: 1200px) {
+    .servicesItem {
+        max-width: calc(33% - 30px + 13px) !important;
+
+    }
+
+    .right {
+        float: right;
+        margin-right: 20px;
+    }
+
+    .banners span {
+        font-size: 60px;
+        font-weight: 100;
+        color: #3d3d3d;
+        font-family: 'Calibri';
+        display: block;
+        letter-spacing: 2px;
+    }
+
+    .banner-span {
+        display: block;
+        text-align: right;
+        font-size: 16px !important;
+        letter-spacing: 0 !important;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .button button {
+        font-size: 100% !important;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .button {
+        padding-left: 15px !important;
+        margin-bottom: 20px;
+
+        padding-right: 15px !important;
+    }
+
+    .men img {
+        height: 100%;
+    }
+
+    .navbar-nav > li > a {
+
+        padding-right: 25px;
+        padding-left: 24px;
+    }
+
+    .seccond_number {
+        padding-left: 32px;
+    }
+     .uruslugi-list .rg{
+        margin-left: 28px;
+    }
+    .red_btn{
+    font-size: 14px;
+       padding: 15px;
+}
+}
