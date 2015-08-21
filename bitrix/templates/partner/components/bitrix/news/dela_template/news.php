@@ -21,7 +21,7 @@ $this->setFrameMode(true);
 	<a href="<?=$arResult["FOLDER"].$arResult["URL_TEMPLATES"]["rss"]?>" title="rss" target="_self"><img alt="RSS" src="<?=$templateFolder?>/images/gif-light/feed-icon-16x16.gif" border="0" align="right" /></a>
 <?endif?>
 
-<?if($arParams["USE_SEARCH"]=="Y"):?>
+<?php if($arParams["USE_SEARCH"]=="Y"):?>
 <?=GetMessage("SEARCH_LABEL")?><?$APPLICATION->IncludeComponent(
 	"bitrix:search.form",
 	"flat",
