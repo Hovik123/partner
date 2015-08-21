@@ -29,8 +29,5 @@ $APPLICATION->SetTitle("О компании");
 
 
 
-        </div>
-
-
 
 <? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>

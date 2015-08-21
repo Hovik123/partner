@@ -31,10 +31,28 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 	</div>
 	<hr class="newshr">
 </footer>
+<script>
+	function initMap() {
+		var map = new google.maps.Map(document.getElementById('map'), {
+			zoom: 12,
+			center: {lat: 55.7038, lng: 37.58}
+		});
+		var image = '/bitrix/templates/partner/img/beachflag.png';
+		var beachMarker = new google.maps.Marker({
+			position: {lat: 55.7039036, lng: 37.65484100000003},
+			map: map,
+			icon: image
+		});
+	}
+</script>
+
+<script async defer
+		src="https://maps.googleapis.com/maps/api/js?signed_in=true&callback=initMap"></script>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="<?=SITE_TEMPLATE_PATH?>/js/bootstrap.min.js"></script>
 <script src="<?=SITE_TEMPLATE_PATH?>/js/main.js"></script>
+<script src="<?=SITE_TEMPLATE_PATH?>/js/sendemail.js"></script>
 </body>
 </html>

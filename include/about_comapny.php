@@ -33,4 +33,5 @@ $APPLICATION->SetTitle("");
 			</p>
 		</div>
 	</div>
+	</div>
 </div><? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
