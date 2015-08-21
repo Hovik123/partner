@@ -334,9 +334,6 @@ font-size: 18px !important;
     box-shadow:none !important;
        font-family: RobotoBold;
 }
-.uruslugi-list .rg{
-    margin-left: 45px;
-}
 .uruslugi-list .btn-white:hover{
     background-color: #01839d;
      color: #fff !important;
@@ -512,7 +509,7 @@ font-family: 'Calibri';
     text-transform: uppercase;
     display: block;
 }
-.archiv activ{
+.archiv .activ{
     color: #01839d;
     font-size: 18px;
 }
