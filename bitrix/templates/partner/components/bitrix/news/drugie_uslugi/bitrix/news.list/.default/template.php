@@ -15,11 +15,11 @@ $this->setFrameMode(true);
 <div class="row">
     <div class="col-lg-12 col-sm-12 col-xs-12 col-md-12 uruslugi-list">
         <div class="col-lg-7 col-sm-4 col-xs-12 col-md-6 padding_left_right_none">
-            <span>Юридические услуги</span>
+            <span>Другие услуги</span>
         </div>
         <div class="col-lg-5 col-sm-8 col-xs-12 col-md-6 ">
-            <button class="btn btn-white rg active">Юридическим лицам</button>
-            <button class="btn btn-white pull-right">физическим лицам</button>
+            <button class="btn btn-white rg active">Астрология для бизнеса</button>
+            <button class="btn btn-white pull-right">Оформление виз</button>
         </div>
     </div>
     <div class="col-lg-12 col-sm-12 col-xs-12 col-md-12 uruslugi-list">

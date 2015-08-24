@@ -6,7 +6,7 @@ $APPLICATION->SetTitle("Другие услуги");
         <div class="row">
             <ul class="breadcrumb">
                 <li><a href="/">Главная</a></li>
-                <li class="active">Юридические услуги</li>
+                <li class="active">Другие услуги</li>
             </ul>
         </div>
 
