@@ -16,7 +16,7 @@
 }
 
 .phone_label, .contacts h4{
-    color: #01839d;
+    color: #0080ba;
     display: block;
     font-family: 'Calibri';
     font-weight: bold;
@@ -117,7 +117,7 @@ font-size: 18px !important;
     padding: 15px;
 }
 .transparent_btn:hover{
-    background-color: #01839d;
+    background-color: #0080ba;
     border: none;
 }
 
@@ -157,12 +157,12 @@ font-size: 18px !important;
 }
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
-    background-color: #01839d;
+    background-color: #0080ba;
     color: #fff;
 }
 
 .nav-tabs > li > a {
-    border: 1px dotted #01839d;
+    border: 1px dotted #0080ba;
     border-radius: 4px;
     padding-left: 30px;
     padding-right: 30px;
@@ -177,7 +177,7 @@ font-size: 18px !important;
 
 .nav-tabs > li > a:hover {
     color: #fff;
-    background-color: #01839d;
+    background-color: #0080ba;
 }
 
 .nav-tabs-servicess > li.active > a, .nav-tabs > li.active > a:focus {
@@ -205,7 +205,7 @@ font-size: 18px !important;
 
     border-style: solid;
     border-width: 30px 20px 0 20px;
-    border-color: #01839d transparent transparent transparent;
+    border-color: #0080ba transparent transparent transparent;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     -webkit-transition-property: transform;
@@ -227,7 +227,7 @@ font-size: 18px !important;
 }
 
 .servicesItem:hover {
-    outline: 2px solid #01839d;
+    outline: 2px solid #0080ba;
 }
 
 .services_icon {
@@ -241,7 +241,7 @@ font-size: 18px !important;
 .servicesItemContent > .title, .download{
     font-size: 18px;
     line-height: 10px;
-    color: #01839d;
+    color: #0080ba;
    }
    div .download{
        padding-bottom: 32px;
@@ -262,7 +262,7 @@ font-size: 18px !important;
 }
 
 .servicesItemContent > .item li {
-    color: #01839d;
+    color: #0080ba;
     list-style-type: square;
 }
 
@@ -273,15 +273,15 @@ font-size: 18px !important;
 .servicesItemContent > .item a {
     margin-top: 10px;
     display: block;
-   color: #01839d;
+   color: #0080ba;
 }
 
 .btn-lazur, .uruslugi-list .active {
-    background-color: #01839d;
+    background-color: #0080ba;
     color: #fff !important;
     text-transform: uppercase;
     min-width: 180px;
-    border-bottom: 2px solid #036a7e;
+    border-bottom: 2px solid #005a96;
     font-family: RobotoBold;
     border-right: none;
     border-left: none;
@@ -300,7 +300,7 @@ font-size: 18px !important;
 }
 .btn-archiv:hover{
     color: #fff;
-    background-color: #01839d;
+    background-color: #0080ba;
 }
 
 .btn-lazur:hover{
@@ -326,16 +326,16 @@ font-size: 18px !important;
 .btn-white{
     margin-top: 13px;
      background-color: #fdfdfd;
-    color: #01839d!important;
+    color: #0080ba!important;
     text-transform: uppercase;
-  border: 1px dotted #01839d;
+  border: 1px dotted #0080ba;
    padding:12px 20px;
    -webkit-box-shadow: none !important;
     box-shadow:none !important;
        font-family: RobotoBold;
 }
 .uruslugi-list .btn-white:hover{
-    background-color: #01839d;
+    background-color: #0080ba;
      color: #fff !important;
 }
 .center {
@@ -494,7 +494,7 @@ font-family: 'Calibri';
     font-size: 12px;
 }
 .breadcrumb li a{
-    color: #01839d;
+    color: #0080ba;
 }
 .newshr{
     margin:10px 0;
@@ -504,13 +504,13 @@ font-family: 'Calibri';
     font-family: Calibri Light, Arial, Candara, Segoe, 'Segoe UI', Optima,  sans-serif;
 }
 .news-list span, .uruslugi-list span{
-    color: #01839d;
+    color: #0080ba;
     font-size: 44px;
     text-transform: uppercase;
     display: block;
 }
 .archiv .activ{
-    color: #01839d;
+    color: #0080ba;
     font-size: 18px;
 }
 .news-list .nav > li > a{
@@ -522,7 +522,7 @@ font-family: 'Calibri';
 .news-list .nav > li > a:hover{
     text-decoration: underline;
     background: none;
-    color: #01839d;
+    color: #0080ba;
 }
 .archiv li{
     font-size: 18px;
@@ -545,7 +545,7 @@ font-family: 'Calibri';
     display: inline;
 }
 .news-list-block h5 a{
-    color:#01839d;
+    color:#0080ba;
     font-size: 22px;
     font-family: Calibri Regular, Arial, Candara, Segoe, 'Segoe UI', Optima,  sans-serif;
 }
@@ -557,14 +557,14 @@ font-family: 'Calibri';
     font-size: 16px;
 }
 .news-list-block h4, .uslugi h4, .contacts span{
-    color: #01839d;
+    color: #0080ba;
     font-size: 39px;
     font-family: Calibri Light;
 
 }
 .contacts h3{
     font-size: 27px;
-    color: #01839d;
+    color: #0080ba;
      font-family: Calibri Light;
      display: block;
 }
@@ -595,7 +595,7 @@ font-family: 'Calibri';
         font-family: Calibri;
 }
 .form_contacts .btn-primary{
-    background-color: #01839d;
+    background-color: #0080ba;
     border: none;
     padding: 5px 40px;
     text-transform: uppercase;
@@ -645,7 +645,7 @@ font-family: 'Calibri';
 .form_name h6{
     font-size: 24px;
     font-weight: bold;
-      color: #01839d; 
+      color: #0080ba;
 }
 .uruslugi-list h2, .stoimost h2{
     color: #303030;
@@ -664,7 +664,7 @@ font-family: 'Calibri';
 .news-list .archiv-news{
     float:right;
     font-size: 18px;
-    color: #01839d;
+    color: #0080ba;
 }
 .uslugi span{
     color:#3b3b3b;
@@ -675,7 +675,7 @@ font-family: 'Calibri';
 }
 .uslugi h3{
     font-size: 22px;
-    color: #01839d;
+    color: #0080ba;
     margin-top: 10px;
     padding-top: 15px
 }
@@ -721,7 +721,7 @@ font-family: 'Calibri';
     float: left;
     margin: 0 20px;
     list-style-type: square;
-    color: #01839d;
+    color: #0080ba;
 }
 .uslugi-tel span{
     color: #6f6f6f;
@@ -732,14 +732,14 @@ font-family: 'Calibri';
     list-style-type: none;
 }
 .pagination > .active > a{
-    background-color: #01839d;
+    background-color: #0080ba;
 }
 .pagination > li > a, .pagination > li > span{
-    color: #01839d;
+    color: #0080ba;
 }
 /*--table--*/
 .table > colgroup + thead > tr:first-child > th{
-    color:#01839d;
+    color:#0080ba;
     font-size: 18px;
     background-color: #f1f1f1;
     font-family: Calibri ;

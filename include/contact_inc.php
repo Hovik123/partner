@@ -1,7 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("");
-?>НАШИ КОНТАКТЫ
+?><span>НАШИ КОНТАКТЫ</span>
 <h3>Контактные телефоны</h3>
 <div class="col-lg-3 col-sm-3 col-xs-3 col-md-3 padding_left_right_none">
 	<h4>Генеральный директор:</h4>
@@ -32,3 +32,4 @@ $APPLICATION->SetTitle("");
  <img src="/bitrix/templates/partner/img/adress.jpg" class="adress img-responsive">
 	</div>
 </div>
+<br>
