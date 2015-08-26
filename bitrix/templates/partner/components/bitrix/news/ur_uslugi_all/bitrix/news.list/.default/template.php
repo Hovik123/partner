@@ -18,17 +18,18 @@ $this->setFrameMode(true);
             <span>Юридические услуги</span>
         </div>
         <div class="col-lg-5 col-sm-8 col-xs-12 col-md-6 ">
-            <button class="btn btn-white rg active">Юридическим лицам</button>
-            <button class="btn btn-white pull-right">физическим лицам</button>
+            <button class="btn btn-white rg active" id="up">Юридическим лицам</button>
+            <button class="btn btn-white pull-right" id="down">физическим лицам</button>
         </div>
     </div>
+    <div class="up">
     <div class="col-lg-12 col-sm-12 col-xs-12 col-md-12 uruslugi-list">
         <h2>Юридическим лицам</h2>
         <div class="col-lg-9 col-sm-9 col-xs-12 col-md-9 padding_left_right_none">
             <p>Организация любой деятельности — коммерческой, бюджетной или <br>некоммерческой — невозможна без юридического сопровождения.</p>
         </div>
         <div class="col-lg-3 col-sm-3 col-xs-12 col-md-3">
-            <button class="btn btn-lazur-bold pull-right">Узнать стоимость услуг</button>
+           <a href="/stoimost/#servicess_price_2"> <button class="btn btn-lazur-bold pull-right">Узнать стоимость услуг</button></a>
         </div>
     </div>
 
@@ -70,13 +71,15 @@ $this->setFrameMode(true);
             }?>
         <?endforeach;?>
     </div>
+    </div>
+    <div class="down">
     <div class="col-lg-12 col-sm-12 col-xs-12 col-md-12 uruslugi-list">
         <h2>Физическим лицам</h2>
         <div class="col-lg-9 col-sm-9 col-xs-12 col-md-9 padding_left_right_none">
             <p>По любым вопросам, от налоговых консультаций до представления интересов организации в различных <br>инстанциях, каждый клиент может получить грамотную, квалифицированную и своевременную помощь.</p>
         </div>
         <div class="col-lg-3 col-sm-3 col-xs-12 col-md-3">
-            <button class="btn btn-lazur-bold pull-right">Узнать стоимость услуг</button>
+            <a href="/stoimost/#servicess_price_1"> <button class="btn btn-lazur-bold pull-right">Узнать стоимость услуг</button></a>
         </div>
     </div>
     <div class="col-lg-12 col-sm-12 col-xs-12 col-md-12">
@@ -116,5 +119,6 @@ $this->setFrameMode(true);
             $i++;
             }?>
         <?endforeach;?>
+    </div>
     </div>
 </div>

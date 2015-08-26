@@ -12,7 +12,15 @@
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
 ?>
+    <div class="row">
+        <ul class="breadcrumb">
+            <li><a href="/">Главная</a></li>
+            <li><a href="/drugie-uslugi"> Другие услуги</a></li>
+            <li class="active"><?=$arResult["NAME"]?></li>
+        </ul>
+    </div>
 
+    <hr class="newshr">
         <div class="col-lg-12 col-sm-12 col-xs-12 col-md-12 uslugi">
             <div class="col-lg-4 col-sm-4 col-xs-12 col-md-4">
                 <?$APPLICATION->IncludeComponent(

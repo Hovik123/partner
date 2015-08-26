@@ -12,14 +12,14 @@
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
 ?>
-
+<?php $i=1;?>
 <? foreach ($arResult["ITEMS"] as $arItem): ?>
     <?
 
     $this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
     $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
     ?>
-    <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6 del-item" id="<?= $this->GetEditAreaId($arItem['ID']); ?>">
+    <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6 del-item <?=$i%2==0?'margin_right_none':''?>" id="<?= $this->GetEditAreaId($arItem['ID']); ?>">
         <div class="col-lg-3 col-sm-3 col-xs-12 col-md-3 padding_left_right_none">
             <a href="<?php echo $arItem['DISPLAY_PROPERTIES']['download_file_pdf']['FILE_VALUE']['SRC']; ?>"
                download="<?php echo $arItem['DISPLAY_PROPERTIES']['download_file_pdf']['FILE_VALUE']['ORIGINAL_NAME']; ?>">
@@ -39,9 +39,9 @@ $this->setFrameMode(true);
         <span class="news_title">
             <? if ($arParams["DISPLAY_NAME"] != "N" && $arItem["NAME"]): ?>
                 <? if (!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])): ?>
-                    <a href="<? echo $arItem["DETAIL_PAGE_URL"] ?>"><b><? echo $arItem["NAME"] ?></b></a><br/>
+                    <a href="<? echo $arItem["DETAIL_PAGE_URL"] ?>"><? echo $arItem["NAME"] ?></a><br/>
                 <? else: ?>
-                    <b><? echo $arItem["NAME"] ?></b><br/>
+                    <? echo $arItem["NAME"] ?>
                 <? endif; ?>
             <? endif; ?>
         </span>
@@ -53,9 +53,10 @@ $this->setFrameMode(true);
             <hr>
                     <span class="text">
                        <? if ($arParams["DISPLAY_PREVIEW_TEXT"] != "N" && $arItem["PREVIEW_TEXT"]): ?>
-                           <? echo $arItem["PREVIEW_TEXT"]; ?>
+                           <? echo mb_substr($arItem["PREVIEW_TEXT"],0,198)."..."; ?>
                        <? endif; ?>
                     </span>
         </div>
     </div>
+    <?php $i++;?>
 <? endforeach; ?>

@@ -15,8 +15,9 @@ $this->setFrameMode(true);
 <div class="container">
     <div class="row">
         <ul class="breadcrumb">
-            <li><a href="#">Главная</a></li>
-            <li class="active">Новости</li>
+            <li><a href="/">Главная</a></li>
+            <li><a href="/novosti"> Новости</a></li>
+            <li class="active"><?=$arResult["NAME"]?></li>
         </ul>
     </div>
     <hr class="newshr">

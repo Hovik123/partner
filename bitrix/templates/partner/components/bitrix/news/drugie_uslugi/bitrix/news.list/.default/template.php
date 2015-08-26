@@ -13,22 +13,31 @@
 $this->setFrameMode(true);
 ?>
 <div class="row">
+    <ul class="breadcrumb">
+        <li><a href="/">Главная</a></li>
+        <li class="active">Другие услуги</li>
+    </ul>
+</div>
+
+<hr class="newshr">
+<div class="row">
     <div class="col-lg-12 col-sm-12 col-xs-12 col-md-12 uruslugi-list">
         <div class="col-lg-7 col-sm-4 col-xs-12 col-md-6 padding_left_right_none">
             <span>Другие услуги</span>
         </div>
         <div class="col-lg-5 col-sm-8 col-xs-12 col-md-6 ">
-            <button class="btn btn-white rg active">Астрология для бизнеса</button>
-            <button class="btn btn-white pull-right">Оформление виз</button>
+            <button class="btn btn-white rg active" id="up">Астрология для бизнеса</button>
+            <button class="btn btn-white pull-right" id="down">Оформление виз</button>
         </div>
     </div>
+    <div class="up">
     <div class="col-lg-12 col-sm-12 col-xs-12 col-md-12 uruslugi-list">
-        <h2>Юридическим лицам</h2>
+        <h2>Астрология для бизнеса</h2>
         <div class="col-lg-9 col-sm-9 col-xs-12 col-md-9 padding_left_right_none">
             <p>Организация любой деятельности — коммерческой, бюджетной или <br>некоммерческой — невозможна без юридического сопровождения.</p>
         </div>
         <div class="col-lg-3 col-sm-3 col-xs-12 col-md-3">
-            <button class="btn btn-lazur-bold pull-right">Узнать стоимость услуг</button>
+            <a href="/stoimost/#servicess_price_3">  <button class="btn btn-lazur-bold pull-right">Узнать стоимость услуг</button></a>
         </div>
     </div>
 
@@ -70,13 +79,15 @@ $this->setFrameMode(true);
             }?>
         <?endforeach;?>
     </div>
+    </div>
+    <div class="down">
     <div class="col-lg-12 col-sm-12 col-xs-12 col-md-12 uruslugi-list">
-        <h2>Физическим лицам</h2>
+        <h2>Оформление виз</h2>
         <div class="col-lg-9 col-sm-9 col-xs-12 col-md-9 padding_left_right_none">
             <p>По любым вопросам, от налоговых консультаций до представления интересов организации в различных <br>инстанциях, каждый клиент может получить грамотную, квалифицированную и своевременную помощь.</p>
         </div>
         <div class="col-lg-3 col-sm-3 col-xs-12 col-md-3">
-            <button class="btn btn-lazur-bold pull-right">Узнать стоимость услуг</button>
+            <a href="/stoimost/#servicess_price_4"> <button class="btn btn-lazur-bold pull-right">Узнать стоимость услуг</button></a>
         </div>
     </div>
     <div class="col-lg-12 col-sm-12 col-xs-12 col-md-12">
@@ -116,5 +127,6 @@ $this->setFrameMode(true);
             $i++;
             }?>
         <?endforeach;?>
+    </div>
     </div>
 </div>

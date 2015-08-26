@@ -4858,8 +4858,8 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 }
 
 .navbar-default {
-    background-color: #014753;
-    border-color: #014753
+    background-color: #1c5b7e;
+    border-color: #1c5b7e
 }
 
 .navbar-default .navbar-brand {
@@ -4885,7 +4885,7 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
     color: #fff;
-    background-color: #055c6b;
+    background-color: #20465d;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
@@ -4893,7 +4893,7 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
     font-size: 19px;
     font-weight: bold;
     font-family: 'Calibri';
-    background-color: #055c6b;
+    background-color: #20465d;
 }
 
 .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:focus, .navbar-default .navbar-nav > .disabled > a:hover {
@@ -4902,11 +4902,11 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #055c6b
+    border-color: #20465d
 }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    background-color: #055c6b
+    background-color: #20465d
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -4919,7 +4919,7 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
     color: #fff;
-    background-color: #055c6b
+    background-color: #20465d
 }
 
 @media (max-width: 767px) {
@@ -4934,7 +4934,7 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover {
         color: #555;
-        background-color: #055c6b
+        background-color: #20465d
     }
 
     .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover {

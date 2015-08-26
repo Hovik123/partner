@@ -99,14 +99,14 @@ $this->setFrameMode(true);
 		<?php endforeach;?>
 		<?php if($isEmpty){?>
 			<div class="col-xs-12 col-lg-12 col-sm-12 col-md-12" style="margin-top: 30px;">
-				<p>Здесь пока нет услуг для Юредических лиц</p>
+				<p>Здесь пока нет услуг для физических лиц</p>
 			</div>
 		<?php }?>
 	</div>
 </div>
 <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 clearfix">
 
-	<a href="./services"><button class="btn btn-lazur  center">Остальные услуги</button></a>
+	<a href="./yuridicheskie-uslugi/"><button class="btn btn-lazur  center">Остальные услуги</button></a>
 </div>
 
 
