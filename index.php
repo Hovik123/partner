@@ -2,6 +2,12 @@
 require($_SERVER['DOCUMENT_ROOT'] . '/bitrix/header.php');
 $APPLICATION->SetTitle('Главная');
 ?>
+    <!-- Modal -->
+
+
+
+
+
     <!--банер-->
     <div class="col-lg-12 col-sm-12 col-xs-12 col-md-12 fon padding_left_right_none">
         <div class="container">
@@ -18,10 +24,10 @@ $APPLICATION->SetTitle('Главная');
                 </div>
                 <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12 pull-right padding_left_right_none buttons">
                     <div class="col-lg-6 col-sm-12 col-xs-12 col-md-6 padding_left_none button">
-                        <button class="btn btn-primary fullwidth transparent_btn">Заказать обратный звонок</button>
+                        <button class="btn btn-primary fullwidth transparent_btn " data-toggle="modal" data-target="#myModal">Заказать обратный звонок</button>
                     </div>
                     <div class="col-lg-6 col-sm-12 col-xs-12 col-md-6 padding_right_none button">
-                        <button class="btn btn-danger fullwidth red_btn">Заказать обратный звонок</button>
+                        <button class="btn btn-danger fullwidth red_btn" data-toggle="modal" data-target="#myModal2">Бесплатная консультация</button>
                     </div>
                 </div>
             </div>
@@ -125,9 +131,9 @@ $APPLICATION->SetTitle('Главная');
 		"SET_STATUS_404" => "Y",
 		"SHOW_404" => "N",
 		"MESSAGE_404" => "",
-		"SEF_FOLDER" => "/yuridicheskie-uslugi/",
+		"SEF_FOLDER" => "./yuridicheskie-uslugi/",
 		"SEF_URL_TEMPLATES" => array(
-			"news" => "/yuridicheskie-uslugi/",
+			"news" => "./yuridicheskie-uslugi/",
 			"section" => "",
 			"detail" => "#ELEMENT_CODE#/",
 		)
@@ -200,6 +206,7 @@ $APPLICATION->SetTitle('Главная');
 		"LIST_PROPERTY_CODE" => array(
 			0 => "",
 			1 => "download_file_pdf",
+			2 => "",
 		),
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
 		"DISPLAY_NAME" => "Y",
@@ -215,6 +222,7 @@ $APPLICATION->SetTitle('Главная');
 		"DETAIL_PROPERTY_CODE" => array(
 			0 => "",
 			1 => "download_file_pdf",
+			2 => "",
 		),
 		"DETAIL_DISPLAY_TOP_PAGER" => "N",
 		"DETAIL_DISPLAY_BOTTOM_PAGER" => "N",
@@ -255,94 +263,94 @@ $APPLICATION->SetTitle('Главная');
 
 
             <? $APPLICATION->IncludeComponent(
-                "bitrix:news",
-                "home_news",
-                array(
-                    "COMPONENT_TEMPLATE" => "home_news",
-                    "IBLOCK_TYPE" => "News",
-                    "IBLOCK_ID" => "3",
-                    "NEWS_COUNT" => "20",
-                    "USE_SEARCH" => "N",
-                    "USE_RSS" => "N",
-                    "USE_RATING" => "N",
-                    "USE_CATEGORIES" => "N",
-                    "USE_FILTER" => "N",
-                    "SORT_BY1" => "ACTIVE_FROM",
-                    "SORT_ORDER1" => "DESC",
-                    "SORT_BY2" => "SORT",
-                    "SORT_ORDER2" => "ASC",
-                    "CHECK_DATES" => "Y",
-                    "SEF_MODE" => "Y",
-                    "AJAX_MODE" => "N",
-                    "AJAX_OPTION_JUMP" => "N",
-                    "AJAX_OPTION_STYLE" => "Y",
-                    "AJAX_OPTION_HISTORY" => "N",
-                    "AJAX_OPTION_ADDITIONAL" => "",
-                    "CACHE_TYPE" => "A",
-                    "CACHE_TIME" => "36000000",
-                    "CACHE_FILTER" => "N",
-                    "CACHE_GROUPS" => "Y",
-                    "SET_LAST_MODIFIED" => "N",
-                    "SET_TITLE" => "N",
-                    "INCLUDE_IBLOCK_INTO_CHAIN" => "N",
-                    "ADD_SECTIONS_CHAIN" => "N",
-                    "ADD_ELEMENT_CHAIN" => "N",
-                    "USE_PERMISSIONS" => "N",
-                    "DISPLAY_DATE" => "Y",
-                    "DISPLAY_PICTURE" => "N",
-                    "DISPLAY_PREVIEW_TEXT" => "Y",
-                    "USE_SHARE" => "N",
-                    "PREVIEW_TRUNCATE_LEN" => "",
-                    "LIST_ACTIVE_DATE_FORMAT" => "d.m.Y",
-                    "LIST_FIELD_CODE" => array(
-                        0 => "",
-                        1 => "",
-                    ),
-                    "LIST_PROPERTY_CODE" => array(
-                        0 => "news_type",
-                        1 => "",
-                    ),
-                    "HIDE_LINK_WHEN_NO_DETAIL" => "N",
-                    "DISPLAY_NAME" => "Y",
-                    "META_KEYWORDS" => "-",
-                    "META_DESCRIPTION" => "-",
-                    "BROWSER_TITLE" => "-",
-                    "DETAIL_SET_CANONICAL_URL" => "N",
-                    "DETAIL_ACTIVE_DATE_FORMAT" => "d.m.Y",
-                    "DETAIL_FIELD_CODE" => array(
-                        0 => "",
-                        1 => "",
-                    ),
-                    "DETAIL_PROPERTY_CODE" => array(
-                        0 => "news_type",
-                        1 => "",
-                    ),
-                    "DETAIL_DISPLAY_TOP_PAGER" => "N",
-                    "DETAIL_DISPLAY_BOTTOM_PAGER" => "Y",
-                    "DETAIL_PAGER_TITLE" => "Новости",
-                    "DETAIL_PAGER_TEMPLATE" => "",
-                    "DETAIL_PAGER_SHOW_ALL" => "Y",
-                    "PAGER_TEMPLATE" => ".default",
-                    "DISPLAY_TOP_PAGER" => "N",
-                    "DISPLAY_BOTTOM_PAGER" => "N",
-                    "PAGER_TITLE" => "Новости",
-                    "PAGER_SHOW_ALWAYS" => "N",
-                    "PAGER_DESC_NUMBERING" => "N",
-                    "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
-                    "PAGER_SHOW_ALL" => "N",
-                    "PAGER_BASE_LINK_ENABLE" => "N",
-                    "SET_STATUS_404" => "Y",
-                    "SHOW_404" => "N",
-                    "MESSAGE_404" => "",
-                    "SEF_FOLDER" => "./novosti",
-                    "SEF_URL_TEMPLATES" => array(
-                        "news" => "./novosti",
-                        "section" => "",
-                        "detail" => "/#ELEMENT_CODE#/",
-                    )
-                ),
-                false
-            ); ?>
+	"bitrix:news", 
+	"home_news", 
+	array(
+		"COMPONENT_TEMPLATE" => "home_news",
+		"IBLOCK_TYPE" => "News",
+		"IBLOCK_ID" => "3",
+		"NEWS_COUNT" => "20",
+		"USE_SEARCH" => "N",
+		"USE_RSS" => "N",
+		"USE_RATING" => "N",
+		"USE_CATEGORIES" => "N",
+		"USE_FILTER" => "N",
+		"SORT_BY1" => "ACTIVE_FROM",
+		"SORT_ORDER1" => "DESC",
+		"SORT_BY2" => "SORT",
+		"SORT_ORDER2" => "ASC",
+		"CHECK_DATES" => "Y",
+		"SEF_MODE" => "Y",
+		"AJAX_MODE" => "N",
+		"AJAX_OPTION_JUMP" => "N",
+		"AJAX_OPTION_STYLE" => "Y",
+		"AJAX_OPTION_HISTORY" => "N",
+		"AJAX_OPTION_ADDITIONAL" => "",
+		"CACHE_TYPE" => "A",
+		"CACHE_TIME" => "36000000",
+		"CACHE_FILTER" => "N",
+		"CACHE_GROUPS" => "Y",
+		"SET_LAST_MODIFIED" => "N",
+		"SET_TITLE" => "N",
+		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
+		"ADD_SECTIONS_CHAIN" => "N",
+		"ADD_ELEMENT_CHAIN" => "N",
+		"USE_PERMISSIONS" => "N",
+		"DISPLAY_DATE" => "Y",
+		"DISPLAY_PICTURE" => "N",
+		"DISPLAY_PREVIEW_TEXT" => "Y",
+		"USE_SHARE" => "N",
+		"PREVIEW_TRUNCATE_LEN" => "100",
+		"LIST_ACTIVE_DATE_FORMAT" => "d.m.Y",
+		"LIST_FIELD_CODE" => array(
+			0 => "",
+			1 => "",
+		),
+		"LIST_PROPERTY_CODE" => array(
+			0 => "news_type",
+			1 => "",
+		),
+		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
+		"DISPLAY_NAME" => "Y",
+		"META_KEYWORDS" => "-",
+		"META_DESCRIPTION" => "-",
+		"BROWSER_TITLE" => "-",
+		"DETAIL_SET_CANONICAL_URL" => "N",
+		"DETAIL_ACTIVE_DATE_FORMAT" => "d.m.Y",
+		"DETAIL_FIELD_CODE" => array(
+			0 => "",
+			1 => "",
+		),
+		"DETAIL_PROPERTY_CODE" => array(
+			0 => "news_type",
+			1 => "",
+		),
+		"DETAIL_DISPLAY_TOP_PAGER" => "N",
+		"DETAIL_DISPLAY_BOTTOM_PAGER" => "Y",
+		"DETAIL_PAGER_TITLE" => "Новости",
+		"DETAIL_PAGER_TEMPLATE" => "",
+		"DETAIL_PAGER_SHOW_ALL" => "Y",
+		"PAGER_TEMPLATE" => ".default",
+		"DISPLAY_TOP_PAGER" => "N",
+		"DISPLAY_BOTTOM_PAGER" => "N",
+		"PAGER_TITLE" => "Новости",
+		"PAGER_SHOW_ALWAYS" => "N",
+		"PAGER_DESC_NUMBERING" => "N",
+		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+		"PAGER_SHOW_ALL" => "N",
+		"PAGER_BASE_LINK_ENABLE" => "N",
+		"SET_STATUS_404" => "Y",
+		"SHOW_404" => "N",
+		"MESSAGE_404" => "",
+		"SEF_FOLDER" => "./novosti",
+		"SEF_URL_TEMPLATES" => array(
+			"news" => "./novosti",
+			"section" => "",
+			"detail" => "/#ELEMENT_CODE#/",
+		)
+	),
+	false
+); ?>
 
         </div>
     </section>
@@ -352,13 +360,18 @@ $APPLICATION->SetTitle('Главная');
             <div class="row">
                 <span class="about_company_title">Кратко о компании “Партнер”</span>
                 <span class="about_company_subtitle">Убедитесь, что имеете дело с настоящими профессионалами</span>
+                <?$APPLICATION->IncludeComponent(
+                    "bitrix:main.include",
+                    "",
+                    Array(
+                        "COMPONENT_TEMPLATE" => ".default",
+                        "AREA_FILE_SHOW" => "file",
+                        "AREA_FILE_SUFFIX" => "inc",
+                        "EDIT_TEMPLATE" => "standard.php",
+                        "PATH" => "/include/about_home.php"
+                    )
+                );?>
 
-                <div class="col-lg-6 col-xs-12 col-sm-6 col-md-6 news_text">
-                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
-                </div>
-                <div class="col-lg-6 col-xs-12 col-sm-6 col-md-6 news_text">
-                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
-                </div>
             </div>
         </div>
     </section>

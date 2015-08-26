@@ -4,9 +4,7 @@ $APPLICATION->SetTitle("");
 ?><div class="row">
 	<div class="col-lg-12 col-sm-12 col-xs-12 col-md-12 news-list">
 		<div class="news-list-block detail-news">
-			<h4>Верховный суд призвал скорректировать закон о "праве на забвение"</h4>
- <i class="fa fa-clock-o"></i>
-			02.04.2015
+			<h4>О компании</h4>
 			<p>
 				Верховный суд считает необоснованными размеры штрафов для поисковиков за отказ в удалении ссылок на личную информацию. Не поддержал законопроект о наказании за нарушение закона о "праве на забвение" и Совет Федерации, сообщает РБК.
 			</p>
@@ -34,4 +32,4 @@ $APPLICATION->SetTitle("");
 		</div>
 	</div>
 	</div>
-</div><? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
+</div>

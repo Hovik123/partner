@@ -3,14 +3,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Другие услуги");
 ?>
     <div class="container">
-        <div class="row">
-            <ul class="breadcrumb">
-                <li><a href="/">Главная</a></li>
-                <li class="active">Другие услуги</li>
-            </ul>
-        </div>
 
-        <hr class="newshr">
 
         <?$APPLICATION->IncludeComponent(
 	"bitrix:news", 
@@ -19,7 +12,7 @@ $APPLICATION->SetTitle("Другие услуги");
 		"COMPONENT_TEMPLATE" => "drugie_uslugi",
 		"IBLOCK_TYPE" => "other_services",
 		"IBLOCK_ID" => "4",
-		"NEWS_COUNT" => "20",
+		"NEWS_COUNT" => "2000",
 		"USE_SEARCH" => "N",
 		"USE_RSS" => "N",
 		"USE_RATING" => "N",

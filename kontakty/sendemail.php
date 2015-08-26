@@ -1,9 +1,9 @@
 <?php
-if ($_POST) { // eñëè ïeğeäaí ìaññèâ POST
-    $name = htmlspecialchars($_POST["name"]); // ïèøeì äaííûe â ïeğeìeííûe è ıêğaíèğóeì ñïeöñèìâoëû
+if ($_POST) {
+    $name = htmlspecialchars($_POST["name"]);
     $email = htmlspecialchars($_POST["email"]);
     $message = htmlspecialchars($_POST["message"]);
-     // ïoäãoòoâèì ìaññèâ oòâeòa
+
     if(mail("hovhannespost@gmail.com","simple mail from partner",$message)){
         $json=New stdClass();
         $json->status=1;

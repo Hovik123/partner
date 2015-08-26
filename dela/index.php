@@ -2,52 +2,106 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("дела");
 ?>
-    <div class="container">
-        <div class="row">
-            <ul class="breadcrumb">
-                <li><a href="/">Главная</a></li>
-                <li class="active">Успешные дела</li>
-            </ul>
-        </div>
-        <hr class="newshr">
-        <div class="row">
-            <div class="col-lg-12 col-sm-12 col-xs-12 col-md-12 news-list">
-                <span>Успешные дела</span>
-                <ul class="nav archiv">
-                    <li>Архив:</li>
-                    <li><a href="#">2016</a></li>
-                    <li><a href="#" class="active">2015</a></li>
-                    <li><a href="#">2014</a></li>
-                </ul>
-                <div class="news-list-block">
-                    <i class="fa fa-clock-o"></i>
-                    <span>02.04.2015</span><h5><a href="#">Признание договора дарения недействительным</a></h5>
-                    <p>Черемушкинским районным судом г.Москвы с участием адвоката Орлова А.А., представлявшего интересы истца, вынесено решение по исковому заявлению о признании договора дарения недействительным.<br>
-                        Исковые требования были мотивированы тем, что истец (инвалид 1 группы) подписал договор дарения указанной квартиры своей супруге, однако в силу своего психического состояния здоровья, не понимал значение своих действий. Намерений подарить единственное жилье у него не было.<br>
-                        По делу была назначена амбулаторная судебно-психиатрическая экспертиза в отношении истца. Согласно заключению комиссии экспертов истец страдает психическим расстройством в форме органического расстройства личности в связи со смешанными заболеваниями (травматического, интоксикационного, сосудистого, атрофического генеза). В интересующий период психические нарушения у истца были столь выражены, что лишали его способности понимать значение своих действий и руководить ими на момент подписания договора дарения квартиры. ...</p>
-                </div>
-                <div> <a href="img/dela.png" class="download" download/>- Посмотреть решение суда</a></div>
-                <div class="news-list-block">
-                    <i class="fa fa-clock-o"></i>
-                    <span>02.04.2015</span><h5><a href="#">Признание договора дарения недействительным</a></h5>
-                    <p>Черемушкинским районным судом г.Москвы с участием адвоката Орлова А.А., представлявшего интересы истца, вынесено решение по исковому заявлению о признании договора дарения недействительным.<br>
-                        Исковые требования были мотивированы тем, что истец (инвалид 1 группы) подписал договор дарения указанной квартиры своей супруге, однако в силу своего психического состояния здоровья, не понимал значение своих действий. Намерений подарить единственное жилье у него не было.<br>
-                        По делу была назначена амбулаторная судебно-психиатрическая экспертиза в отношении истца. Согласно заключению комиссии экспертов истец страдает психическим расстройством в форме органического расстройства личности в связи со смешанными заболеваниями (травматического, интоксикационного, сосудистого, атрофического генеза). В интересующий период психические нарушения у истца были столь выражены, что лишали его способности понимать значение своих действий и руководить ими на момент подписания договора дарения квартиры. ...</p>
-                </div>
-                <div> <a href="img/dela.png" class="download" download/>- Посмотреть решение суда</a></div>
-            </div>
-            <nav>
-                <ul class="pagination">
-                    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
-                    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
+<?$APPLICATION->IncludeComponent(
+	"bitrix:news", 
+	"dela_all_template", 
+	array(
+		"COMPONENT_TEMPLATE" => "dela_all_template",
+		"IBLOCK_TYPE" => "works",
+		"IBLOCK_ID" => "2",
+		"NEWS_COUNT" => "10",
+		"USE_SEARCH" => "N",
+		"USE_RSS" => "N",
+		"USE_RATING" => "N",
+		"USE_CATEGORIES" => "N",
+		"USE_FILTER" => "Y",
+		"SORT_BY1" => "ACTIVE_FROM",
+		"SORT_ORDER1" => "DESC",
+		"SORT_BY2" => "SORT",
+		"SORT_ORDER2" => "ASC",
+		"CHECK_DATES" => "Y",
+		"SEF_MODE" => "Y",
+		"AJAX_MODE" => "N",
+		"AJAX_OPTION_JUMP" => "N",
+		"AJAX_OPTION_STYLE" => "Y",
+		"AJAX_OPTION_HISTORY" => "N",
+		"AJAX_OPTION_ADDITIONAL" => "",
+		"CACHE_TYPE" => "A",
+		"CACHE_TIME" => "36000000",
+		"CACHE_FILTER" => "N",
+		"CACHE_GROUPS" => "Y",
+		"SET_LAST_MODIFIED" => "N",
+		"SET_TITLE" => "N",
+		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
+		"ADD_SECTIONS_CHAIN" => "N",
+		"ADD_ELEMENT_CHAIN" => "N",
+		"USE_PERMISSIONS" => "N",
+		"DISPLAY_DATE" => "Y",
+		"DISPLAY_PICTURE" => "N",
+		"DISPLAY_PREVIEW_TEXT" => "Y",
+		"USE_SHARE" => "N",
+		"PREVIEW_TRUNCATE_LEN" => "",
+		"LIST_ACTIVE_DATE_FORMAT" => "d.m.Y",
+		"LIST_FIELD_CODE" => array(
+			0 => "",
+			1 => "",
+		),
+		"LIST_PROPERTY_CODE" => array(
+			0 => "",
+			1 => "download_file_pdf",
+			2 => "",
+		),
+		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
+		"DISPLAY_NAME" => "Y",
+		"META_KEYWORDS" => "-",
+		"META_DESCRIPTION" => "-",
+		"BROWSER_TITLE" => "-",
+		"DETAIL_SET_CANONICAL_URL" => "N",
+		"DETAIL_ACTIVE_DATE_FORMAT" => "d.m.Y",
+		"DETAIL_FIELD_CODE" => array(
+			0 => "",
+			1 => "",
+		),
+		"DETAIL_PROPERTY_CODE" => array(
+			0 => "",
+			1 => "download_file_pdf",
+			2 => "",
+		),
+		"DETAIL_DISPLAY_TOP_PAGER" => "N",
+		"DETAIL_DISPLAY_BOTTOM_PAGER" => "Y",
+		"DETAIL_PAGER_TITLE" => "Страница",
+		"DETAIL_PAGER_TEMPLATE" => "",
+		"DETAIL_PAGER_SHOW_ALL" => "Y",
+		"PAGER_TEMPLATE" => "modern",
+		"DISPLAY_TOP_PAGER" => "N",
+		"DISPLAY_BOTTOM_PAGER" => "Y",
+		"PAGER_TITLE" => "Дела",
+		"PAGER_SHOW_ALWAYS" => "N",
+		"PAGER_DESC_NUMBERING" => "N",
+		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+		"PAGER_SHOW_ALL" => "N",
+		"PAGER_BASE_LINK_ENABLE" => "N",
+		"SET_STATUS_404" => "N",
+		"SHOW_404" => "N",
+		"MESSAGE_404" => "",
+		"SEF_FOLDER" => "/dela/",
+		"FILTER_NAME" => "",
+		"FILTER_FIELD_CODE" => array(
+			0 => "DATE_ACTIVE_FROM",
+			1 => "",
+		),
+		"FILTER_PROPERTY_CODE" => array(
+			0 => "",
+			1 => "download_file_pdf",
+			2 => "",
+		),
+		"SEF_URL_TEMPLATES" => array(
+			"news" => "/dela/",
+			"section" => "",
+			"detail" => "#ELEMENT_CODE#/",
+		)
+	),
+	false
+);?>
 
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

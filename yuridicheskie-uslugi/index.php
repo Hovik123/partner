@@ -17,8 +17,8 @@ $APPLICATION->SetTitle("юридические услуги");
 	"ur_uslugi_all", 
 	array(
 		"COMPONENT_TEMPLATE" => "ur_uslugi_all",
-		"IBLOCK_TYPE" => "other_services",
-		"IBLOCK_ID" => "4",
+		"IBLOCK_TYPE" => "servicess",
+		"IBLOCK_ID" => "1",
 		"NEWS_COUNT" => "20",
 		"USE_SEARCH" => "N",
 		"USE_RSS" => "N",
